@@ -115,10 +115,10 @@ local server
 */
 
 // define('LINKQRCODE', "/exchangetailor.com/wallet/send");
-define('NAMETITLE', "Equotransfer");
-define('NAMEBANK', "EquoTransfer");
+define('NAMETITLE', "Blip Bank");
+define('NAMEBANK', "blip Bank");
 
-define('BANK_ID', "8");
+define('BANK_ID', "9");
 
 /*email config*/
 define('HOST_EMAIL', "mail.tracklessbank.com");
