@@ -98,7 +98,7 @@ if (stripos($_SERVER['HTTP_HOST'],'sandbox') === 0){ //
     define('LINKQRCODE', "/wallet/send");
 }elseif(stripos($_SERVER['HTTP_HOST'],'localhost') === 0){
     define('URLAPI', "https://api.sandbox.tracklessbank.com");
-    define('LINKQRCODE', "/equotransfer/wallet/send");
+    define('LINKQRCODE', "/Blipbank/wallet/send");
 }else{
     define('URLAPI', "https://api.tracklessbank.com");
     define('LINKQRCODE', "/wallet/send");
@@ -115,8 +115,9 @@ local server
 */
 
 // define('LINKQRCODE', "/exchangetailor.com/wallet/send");
-define('NAMETITLE', "Blip Bank");
-define('NAMEBANK', "blip Bank");
+
+define('NAMETITLE', "Blip Digital Bank");
+define('NAMEBANK', "Blip Digital Bank");
 
 define('BANK_ID', "9");
 
