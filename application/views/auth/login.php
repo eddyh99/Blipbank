@@ -8,13 +8,15 @@
                 <div class="row ">
                     <div class="col-6 mx-auto ">
                         <a href="<?= base_url()?>">
-                            <img class="img-fluid" src="<?= base_url()?>assets/img/logo-big.png" alt="logo-login">
+                            <img class="img-fluid" src="<?= base_url()?>assets/img/logoblip.png" alt="logo-login">
                         </a>
-                        <h2 translate="no" class="fw-bold text-white f-poppins mt-3">EquoTransfer</h2>
-                        <p class="text-white f-poppins">The most popular bank inter world</p>
-                        <a href="" class="btn-signup mt-2 position-absolute">
-                            Read More
-                        </a>
+                        <h2 translate="no" class="fw-bold text-black f-poppins mt-3">REGISTER</h2>
+                        <p class=" f-poppins">If you don't have an account</p>
+                        <p class="f-poppins text-black">You can
+                            <a href="<?= base_url(); ?>auth/signup" class="ms-1 f-publicsans">
+                                <u>Register here !</u>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -45,11 +47,6 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                                 <?php } ?>
-                                <div class="col-12 mb-5 text-center d-block d-lg-none">
-                                    <a href="<?= base_url() ?>">
-                                        <img class="img-fluid" src="<?= base_url(); ?>assets/img/logo-dark.png" alt="logo">
-                                    </a>
-                                </div>
                                 <div class="col-12 mb-5">
                                     <div class="input-group custom-login-input py-1">
                                         <div class="input-group-text ps-4">
@@ -87,11 +84,6 @@
                                         <a href="<?= base_url(); ?>auth/forget_pass" class="f-publicsans">
                                             <u>
                                                 Forgot password?
-                                            </u>
-                                        </a>
-                                        <a href="<?= base_url(); ?>auth/signup" class="f-publicsans">
-                                            <u>
-                                                Register
                                             </u>
                                         </a>
                                     </div>

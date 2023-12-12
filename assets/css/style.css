@@ -192,11 +192,15 @@ color: #333333;
 
 
 .login.wrap-signup {
-  overflow-x: hidden;
+    overflow-x: hidden;
+    background: url(../img/bglogin-blip.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    background-position: bottom bottom;
 }
 
 .bg-signup {
-  background: url(../img/bg-login-equo.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -210,21 +214,27 @@ color: #333333;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.logo-login a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4D47C3;
+}
 .btn-signup {
-  background-color: #FFCE00;
-  color: #B90B0B;
+  background-color: #B90B0B;
+  color: #ffffff;
   border-radius: 999999999px;
   padding: 0.8rem 2.5rem;
 }
  .btn-signup:hover {
-  background-color: #bf9900;
-  color: #ffffff;
+  background-color: #e03333;
+  color: #000000;
  }
 
  .input-group.custom-login-input {
   border: 1px solid #EEEEEE;
-  border-radius: 999999px;
+  border-radius: 10px;
+  background-color: #FFEFF8;
  }
 
 
@@ -1744,7 +1754,7 @@ color: #ffffff;
   background-clip: content-box;
   background-repeat: no-repeat;
   background-position: top -25px right;
-  background-size: 500px;
+  background-size: 502px;
 }
 
 .anonymity h1 {

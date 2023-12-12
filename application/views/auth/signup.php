@@ -8,13 +8,15 @@
                 <div class="row ">
                     <div class="col-6 mx-auto ">
                         <a href="<?= base_url()?>">
-                            <img class="img-fluid" src="<?= base_url()?>assets/img/logo-big.png" alt="logo-login">
+                            <img class="img-fluid" src="<?= base_url()?>assets/img/logoblip.png" alt="logo-login">
                         </a>
-                        <h2 translate="no" class="fw-bold text-white f-poppins mt-3">EquoTransfer</h2>
-                        <p class="text-white f-poppins">The most popular bank inter world</p>
-                        <a href="" class="btn-signup mt-2 position-absolute">
-                            Read More
-                        </a>
+                        <h2 translate="no" class="fw-bold text-black f-poppins mt-3">REGISTER</h2>
+                        <p class=" f-poppins">If you already have an account</p>
+                        <p class="f-poppins text-black">You can
+                            <a href="<?= base_url(); ?>auth/login" class="ms-1">
+                                <u>Login here !</u>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -25,7 +27,6 @@
                     <div class="col-10 mx-auto mt-5 pt-5">
                         <div class="mt-3 mb-5">
                             <h2 class="fw-bold f-poppins">Register</h2>
-                            <p class="f-poppins">Sign Up to Get Started</p>
                         </div>
                         <div class="">
                             <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST" action="<?= base_url(); ?>auth/register">
@@ -128,13 +129,9 @@
                                     </div>
                                 </div>
                                 <div class="g-recaptcha" data-sitekey="<?php echo $this->config->item('google_key') ?>"></div>
-                                <div class="col-12 mt-5 d-grid gap-2">
+                                <div class="col-12 mt-5 mb-5 d-grid gap-2">
                                     <button type="submit" class="btn btn-signup">Register</button>
-                                    <a href="<?= base_url(); ?>auth/login" class="my-3">
-                                        <u>
-                                            Login ?
-                                        </u>
-                                    </a>
+                                    
                                 </div>
                             </form>
                         </div>

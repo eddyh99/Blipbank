@@ -2,15 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\application",
-    "\\application\\config",
-    "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\member",
-    "\\application\\views\\member\\card",
-    "\\application\\views\\tamplate",
+    "\\application\\views\\admin\\history",
+    "\\application\\views\\admin\\member",
+    "\\application\\views\\auth",
+    "\\application\\views\\auth\\js",
+    "\\application\\views\\auth\\landingpage",
+    "\\assets",
     "\\assets\\css",
     "\\assets\\css\\adm"
   ],
-  "SelectedNode": "\\application\\views\\member\\card\\card-request.php",
+  "SelectedNode": "\\assets\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
