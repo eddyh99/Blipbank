@@ -75,18 +75,18 @@
                                             </span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 d-grid gap-2 mt-auto mb-3">
-                                    <button type="submit" class="btn btn-signup">Log in</button>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex justify-content-between">
+                                <div class="col-12 mt-2">
+                                    <div class="d-flex justify-content-end">
                                         <a href="<?= base_url(); ?>auth/forget_pass" class="f-publicsans">
                                             <u>
                                                 Forgot password?
                                             </u>
                                         </a>
                                     </div>
+                                </div>
+                                </div>
+                                <div class="col-12 d-grid gap-2 mt-auto mb-3">
+                                    <button type="submit" class="btn btn-signup">Log in</button>
                                 </div>
                             </form>
                         </div>
