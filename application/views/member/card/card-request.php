@@ -2,15 +2,15 @@
     <div class="img-load d-flex flex-column justify-content-center align-items-center">
 
         <!-- For Logo Loading -->
-        <img src="<?= base_url()?>assets/img/logo-only.svg" alt="img-load">
+        <img src="<?= base_url()?>assets/img/logoblip.svg" alt="img-load">
         <span class="pt-3">Please wait...</span>
         
         <!-- For Circle Loading -->
-        <!-- <div class="spinner-border" role="status">
+        <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
-        </div> -->
+        </div>
     </div>
-</div>
+</div> 
 <?php if($requestcard == 'detailcard') {?>
     <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 col-xl-6">
@@ -105,16 +105,22 @@
                                 </h1>
                             </div>
                             <a href="<?= base_url(); ?>card/requestcard?requestcard=<?= base64_encode('virtual')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
-                                <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
+                                <span class="text-red-blip fw-bold text-center f-hahmlet">
                                 Request Virtual Card
                                 </span>
                             </a>
-                            <a href="<?= base_url(); ?>card/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
-                                <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
-                                    Request Physical Card 
-                                </span>
-                            </a>
+                            <div class="col-12 mx-auto mt-4">
+                                <div class="card-topup d-grid align-items-center justify-content-center">
+                                    <span class="text-red-blip fw-bold text-center f-hahmlet">
+                                        Request Physical Card
+                                    </span>
+                                    <span class="text-red-blip fw-bold text-center f-hahmlet">
+                                        (Coming Soon)
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+
                     <?php }?>
     
                     <?php if($requestcard == 'activenow'){?>

@@ -213,7 +213,7 @@ color: #333333;
 
 .btn-signup {
   background-color: #FFCE00;
-  color: #003B43;
+  color: #B90B0B;
   border-radius: 999999999px;
   padding: 0.8rem 2.5rem;
 }
@@ -239,13 +239,13 @@ color: #333333;
     font-weight: 600;
     transition: 0.5s;
     color: #ffffff;
-    background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 50.3%, #003B43 100%);
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
     border-radius: 10px;
     border: 1px solid #838383;
 }
 
     .btn-confirm:hover {
-        background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 50.3%, #003B43 100%);
+        background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
         border: 1px solid #838383;
         color: #ffffff;
     }
@@ -338,8 +338,7 @@ color: #333333;
 
 .currencies-card .btn-select-currencies {
     font-size: 14px;
-    color: #003B43;
-
+    color: #B90B0B;
 }
 
 .qrcode-download {
@@ -353,9 +352,9 @@ color: #333333;
 .btn-card-confirm-nocard{
   padding: 1rem 3rem;
   transition: 0.5s;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
+  background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
   border-radius: 26.386px;
 }
 
@@ -476,9 +475,9 @@ color: #333333;
 .btn-card-confirm{
   padding: 1rem 3rem;
   transition: 0.5s;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
+  background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
   border-radius: 26.386px;
 }
 
@@ -489,12 +488,18 @@ color: #333333;
 
 .wrap-border-topup {
   background: linear-gradient(#fff, #fff) padding-box,
-  linear-gradient(to right, #00A7DC, #0F4E97, #0F4E97) border-box;
+  linear-gradient(to right, #000000, #000000, #000000) border-box;
   border-radius: 10px;
   border: 3px solid transparent;
 
 }
+.wrap-border-topup-txt {
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) border-box;
+  border-radius: 10px;
+  border: 3px solid transparent;
 
+}
 .form-topup-card {
   background: linear-gradient(#fff, #fff) padding-box,
   linear-gradient(to right, #000000, #000000, #000000) border-box;
@@ -571,15 +576,19 @@ color: #333333;
   background: linear-gradient(#ffffff, #ffffff) padding-box,
   linear-gradient(to right, #0066FF, #0066FF, #0066FF) border-box;
   border-radius: 12px;
-  border: 3px solid transparent;
+  border: 3px solid #B90B0B;
 }
-
+.card-topup .text-red-blip {
+    color: #000000;
+}
 .card-topup:hover{
-  background: linear-gradient(#0066FF, #0066FF) padding-box,
+  background: linear-gradient(#B90B0B, #B90B0B) padding-box,
   linear-gradient(to right, #0066FF, #0066FF, #0066FF) border-box;
   color: #ffffff;
 }
-
+.card-topup:hover .text-red-blip {
+    color: #ffffff;
+}
 .card-balance div:nth-child(1) {
   font-size: 12px;
 }
@@ -3744,7 +3753,6 @@ color: #ffffff;
 }
 
 
-
 .f-jakarta {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -3892,8 +3900,8 @@ color: #ffffff;
 }
 
 .attention-box {
-  background: linear-gradient(180deg, #FFEAA2 0%, #FFEAA2 100%);
-  border: 3px solid #000000;
+  background: linear-gradient(180deg, #FFB6B6 0%, #FFB6B6 100%);
+  border: 2px solid #000000;
   border-radius: 10px;
 }
 
@@ -4807,8 +4815,8 @@ color: #ffffff;
   }
 
   .copy-refcode input {
-    background: #FFEAA2;
-    color: #003B43 !important;
+    background: #FFA3A3;
+    color: #B90B0B !important;
   }
 
   .copy-uqcode input {
@@ -4835,7 +4843,7 @@ color: #ffffff;
 
   .menus-list-app a {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 5px;
     font-weight: 500;
     font-size: 21px;
@@ -4847,7 +4855,7 @@ color: #ffffff;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 20px;
     color: #000000;
     font-weight: 500;
@@ -4856,7 +4864,7 @@ color: #ffffff;
   }
 
   .menus-list-app a.menus-blue:hover {
-        background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+        background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #FFCF24;
     color: #fff;
   }
@@ -4894,7 +4902,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list {
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 5px;
     color: #000000;
 
@@ -4904,7 +4912,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #c6c6c6;
     border-radius: 5px;
 
@@ -5111,7 +5119,7 @@ color: #ffffff;
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -5125,7 +5133,7 @@ color: #ffffff;
 
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #003B43;
+    border-bottom: 1px solid #B90B0B;
   }
 
   .list-transaction img {
@@ -5216,12 +5224,12 @@ color: #ffffff;
 
   .currency-next-btn {
     display: inline-block;
-    background: #02e8a2;
+    background: #FFBCBC;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .check-currency {
@@ -5264,7 +5272,7 @@ color: #ffffff;
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #003B43 !important;
+    background-color: #B90B0B !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -5439,7 +5447,7 @@ color: #ffffff;
 
   .swap-form-icon {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
   }
 
@@ -5623,7 +5631,7 @@ color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .receive-note span {
@@ -5652,7 +5660,7 @@ color: #ffffff;
   }
 
   .recive-bank a {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -5661,7 +5669,7 @@ color: #ffffff;
   }
 
   .recive-bank a:hover {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -5675,44 +5683,44 @@ color: #ffffff;
     border-radius: 5px;
   }
 
-   .btn-receive-bank {
+  .btn-receive-bank {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #003B43;
+    background-color: #B90B0B;
     border-radius: 9999px;
   }
 
   .btn-receive-bank:hover {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
   }
-      .receive-bank a {
+  .receive-bank a {
     background: #ffffff;
-    color: #003B43;
+    color: #B90B0B;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border: 2px solid #003B43;
-    }
+    border: 2px solid #B90B0B;  
+  }
 
-    .receive-bank a:hover {
-    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+  .receive-bank a:hover {
+    background: linear-gradient(90deg, #B90B0B 0%, #B90B0B 100%);
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    }
+   }
 
   .btn-wallet-cancle {
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 18px;
-      background-color: #ffffff;
-      color: #003B43;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #ffffff;
+    color: #B90B0B;
   }
 
 
@@ -5786,7 +5794,7 @@ color: #ffffff;
 
   .swap-selection select {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
 
     background-color: #fff !important;
@@ -5820,14 +5828,14 @@ color: #ffffff;
     font-weight: 600;
     font-size: 24px !important;
     line-height: 110%;
-    color: #003B43 !important;
+    color: #B90B0B !important;
   }
 
   .title-top-header.multi {
     font-weight: 600;
     font-size: 24px !important;
     line-height: 150%;
-    color: #003B43 !important;
+    color: #B90B0B !important;
   }
 
   .subtitle-top-header {
@@ -5881,7 +5889,7 @@ color: #ffffff;
     font-weight: 700;
     font-size: 18px;
     line-height: 110%;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .box-title-accordion .small {
@@ -5956,7 +5964,7 @@ color: #ffffff;
 
 
   .freedy-card.piggy {
-    background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #578187 47.00%, #336c74 90.00%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
@@ -6133,7 +6141,7 @@ color: #ffffff;
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     background-color: transparent;
   }
 
@@ -6380,13 +6388,13 @@ color: #ffffff;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 9999px;
     padding: 0 1rem;
   }
 
   .navbar-app>.box-navbar-freedy a.logout {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -6397,7 +6405,7 @@ color: #ffffff;
   }
 
   .navbar-app>.box-navbar-freedy a.logout:hover {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
   }
 
   .navbar-app>.box-navbar-freedy a.back {
@@ -6405,7 +6413,7 @@ color: #ffffff;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#003B43,#003B43) border-box;
+      linear-gradient(#B90B0B,#B90B0B) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -6601,7 +6609,7 @@ color: #ffffff;
     font-size: 24px;
     line-height: 177.9%;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .content-freedy p {
@@ -6843,7 +6851,7 @@ color: #ffffff;
     transition: 0.5s;
     color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #B90B0B 47.28%, #B90B0B 96.97%);
     border-radius: 44px;
   }
 
@@ -7036,7 +7044,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .bg-black {
-    background: #003B43  !important;
+    background: #B90B0B  !important;
     border-radius: 10px;
 
     color: #fff;
@@ -7099,7 +7107,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 0%, #B90B0B 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 14px;
@@ -7124,7 +7132,7 @@ color: #ffffff;
     font-size: 17px;
     line-height: 21px;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .navbar-app>.box-navbar-freedy {
@@ -7140,13 +7148,13 @@ color: #ffffff;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 9999px;
     padding: 0 1rem;
   }
 
   .navbar-app>.box-navbar-freedy a.logout {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -7157,7 +7165,7 @@ color: #ffffff;
   }
 
   .navbar-app>.box-navbar-freedy a.logout:hover {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
   }
 
   .navbar-app>.box-navbar-freedy a.back {
@@ -7165,7 +7173,7 @@ color: #ffffff;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#003B43,#003B43) border-box;
+      linear-gradient(#B90B0B,#B90B0B) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -7194,7 +7202,7 @@ color: #ffffff;
   }
 
   .box-code-freedy {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     border-radius: 25px;
   }
 
@@ -7277,8 +7285,8 @@ color: #ffffff;
   }
 
   .copy-refcode input {
-    background: #FFEAA2;
-    color: #003B43 !important;
+    background: #FFA3A3;
+    color: #B90B0B !important;
   }
 
   .copy-uqcode input {
@@ -7305,7 +7313,7 @@ color: #ffffff;
 
   .menus-list-app a {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 5px;
 
     font-weight: 500;
@@ -7318,7 +7326,7 @@ color: #ffffff;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     color: #000000;
     border-radius: 20px;
     font-weight: 500;
@@ -7327,7 +7335,7 @@ color: #ffffff;
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #FFCF24;
     color: #fff;
   }
@@ -7365,7 +7373,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list {
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 5px;
     color: #000000;
 
@@ -7375,7 +7383,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #c6c6c6;
     border-radius: 5px;
 
@@ -7582,7 +7590,7 @@ color: #ffffff;
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -7596,7 +7604,7 @@ color: #ffffff;
 
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #003B43;
+    border-bottom: 1px solid #B90B0B;
   }
 
   .list-transaction img {
@@ -7687,12 +7695,12 @@ color: #ffffff;
 
   .currency-next-btn {
     display: inline-block;
-    background: #02e8a2;
+    background: #FFBCBC;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .check-currency {
@@ -7735,7 +7743,7 @@ color: #ffffff;
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #003B43 !important;
+    background-color: #B90B0B !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -7910,7 +7918,7 @@ color: #ffffff;
 
   .swap-form-icon {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
   }
 
@@ -8095,7 +8103,7 @@ color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .receive-note span {
@@ -8124,7 +8132,7 @@ color: #ffffff;
   }
 
   .recive-bank a {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -8133,7 +8141,7 @@ color: #ffffff;
   }
 
   .recive-bank a:hover {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -8152,26 +8160,26 @@ color: #ffffff;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #003B43;
+    background-color: #B90B0B;
     border-radius: 9999px;
   }
 
   .btn-receive-bank:hover {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
   }
       .receive-bank a {
     background: #ffffff;
-    color: #003B43;
+    color: #B90B0B;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     }
 
     .receive-bank a:hover {
-    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(90deg, #B90B0B 0%, #B90B0B 100%);
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -8184,7 +8192,7 @@ color: #ffffff;
       font-size: 15px;
       line-height: 18px;
       background-color: #ffffff;
-      color: #003B43;
+      color: #B90B0B;
   }
 
   .b-qr {
@@ -8221,7 +8229,7 @@ color: #ffffff;
 
   .swap-selection select {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
 
     background-color: #fff !important;
@@ -8255,7 +8263,7 @@ color: #ffffff;
     font-weight: 600;
     font-size: 24px !important;
     line-height: 110%;
-    color: #003B43 !important;
+    color: #B90B0B !important;
   }
 
   .title-top-header.multi {
@@ -8352,7 +8360,7 @@ color: #ffffff;
     font-weight: 700;
     font-size: 28px;
     line-height: 110%;
-    color: #003B43;
+    color: #B90B0B;
 }
   .box-title-accordion .small {
     font-weight: 400;
@@ -8425,7 +8433,7 @@ color: #ffffff;
   }
 
   .freedy-card.piggy {
-    background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #578187 47.00%, #336c74 90.00%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
@@ -8602,7 +8610,7 @@ color: #ffffff;
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     background-color: transparent;
   }
 
@@ -9072,7 +9080,7 @@ color: #ffffff;
     font-size: 30px;
     line-height: 177.9%;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .content-freedy p {
@@ -9310,7 +9318,7 @@ color: #ffffff;
     transition: 0.5s;
     color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #B90B0B 47.28%, #B90B0B 96.97%);
     border-radius: 44px;
   }
 
@@ -9491,7 +9499,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .bg-black {
-    background: #003B43  !important;
+    background: #B90B0B  !important;
     border-radius: 10px;
     color: #fff;
   }
@@ -9553,7 +9561,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 0%, #B90B0B 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -9577,7 +9585,7 @@ color: #ffffff;
     font-size: 17px;
     line-height: 21px;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .navbar-app>.box-navbar-freedy {
@@ -9593,13 +9601,13 @@ color: #ffffff;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 9999px;
     padding: 0 1rem;
   }
 
   .navbar-app>.box-navbar-freedy a.logout {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -9610,7 +9618,7 @@ color: #ffffff;
   }
 
   .navbar-app>.box-navbar-freedy a.logout:hover {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
   }
 
   .navbar-app>.box-navbar-freedy a.back {
@@ -9618,7 +9626,7 @@ color: #ffffff;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#003B43,#003B43) border-box;
+      linear-gradient(#B90B0B,#B90B0B) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -9647,7 +9655,7 @@ color: #ffffff;
   }
 
     .box-code-freedy {
-        border: 3px solid #003B43;
+        border: 3px solid #B90B0B;
         border-radius: 25px;
     }
 
@@ -9730,8 +9738,8 @@ color: #ffffff;
   }
 
   .copy-refcode input {
-    background: #FFEAA2;
-    color: #003B43 !important;
+    background: #FFA3A3;
+    color: #B90B0B !important;
   }
 
   .copy-uqcode input {
@@ -9758,7 +9766,7 @@ color: #ffffff;
 
   .menus-list-app a {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 5px;
 
     font-weight: 500;
@@ -9771,7 +9779,7 @@ color: #ffffff;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     color: #000000;
     border-radius: 20px;
     font-weight: 500;
@@ -9780,7 +9788,7 @@ color: #ffffff;
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #FFCF24;
     color: #fff;
   }
@@ -9818,7 +9826,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list {
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 5px;
     color: #000000;
 
@@ -9828,7 +9836,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
     border: 1px solid #c6c6c6;
     border-radius: 5px;
 
@@ -10035,7 +10043,7 @@ color: #ffffff;
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -10049,7 +10057,7 @@ color: #ffffff;
 
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #003B43;
+    border-bottom: 1px solid #B90B0B;
   }
 
   .list-transaction img {
@@ -10140,12 +10148,12 @@ color: #ffffff;
 
   .currency-next-btn {
     display: inline-block;
-    background: #02e8a2;
+    background: #FFBCBC;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .check-currency {
@@ -10188,7 +10196,7 @@ color: #ffffff;
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #003B43 !important;
+    background-color: #B90B0B !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -10363,7 +10371,7 @@ color: #ffffff;
 
   .swap-form-icon {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
   }
 
@@ -10548,7 +10556,7 @@ color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .receive-note span {
@@ -10577,7 +10585,7 @@ color: #ffffff;
   }
 
   .recive-bank a {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -10586,7 +10594,7 @@ color: #ffffff;
   }
 
   .recive-bank a:hover {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -10605,27 +10613,27 @@ color: #ffffff;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #003B43;
+    background-color: #B90B0B;
     border-radius: 9999px;
   }
 
   .btn-receive-bank:hover {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
   }
 
       .receive-bank a {
     background: #ffffff;
-    color: #003B43;
+    color: #B90B0B;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     }
 
     .receive-bank a:hover {
-    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(90deg, #B90B0B 0%, #B90B0B 100%);
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -10638,7 +10646,7 @@ color: #ffffff;
       font-size: 15px;
       line-height: 18px;
       background-color: #ffffff;
-      color: #003B43;
+      color: #B90B0B;
   }
 
   .b-qr {
@@ -10675,7 +10683,7 @@ color: #ffffff;
 
   .swap-selection select {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
 
     background-color: #fff !important;
@@ -10709,7 +10717,7 @@ color: #ffffff;
     font-weight: 600;
     font-size: 26px !important;
     line-height: 110%;
-    color: #003B43 !important;
+    color: #B90B0B !important;
   }
 
   .title-top-header.multi {
@@ -10779,8 +10787,8 @@ color: #ffffff;
     font-weight: 700;
     font-size: 24px;
     line-height: 110%;
-    color: #003B43;
-  }
+    color: #B90B0B;
+}
 
   .box-title-accordion .small {
     font-weight: 400;
@@ -10804,7 +10812,7 @@ color: #ffffff;
   }
 
   .freedy-card {
-    border: 4px solid #B90B0B ;
+    border: 4px solid #B90B0B;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: 275px;
@@ -10858,7 +10866,7 @@ color: #ffffff;
   }
 
   .freedy-card.piggy {
-    background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #578187 47.00%, #336c74 90.00%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
@@ -11038,7 +11046,7 @@ color: #ffffff;
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     background-color: transparent;
   }
 
@@ -11582,7 +11590,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .bg-black {
-    background: #003B43  !important;
+    background: #B90B0B  !important;
     border-radius: 10px;
 
     color: #fff;
@@ -11645,7 +11653,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 0%, #B90B0B 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -11962,7 +11970,7 @@ color: #ffffff;
     font-size: 30px;
     line-height: 177.9%;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .content-freedy p {
@@ -12217,7 +12225,7 @@ color: #ffffff;
     transition: 0.5s;
     color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #B90B0B 47.28%, #B90B0B 96.97%);
     border-radius: 44px;
   }
 
@@ -12412,7 +12420,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .bg-black {
-    background: #003B43 !important;
+    background: #B90B0B !important;
     border-radius: 10px;
     color: #fff;
   }
@@ -12474,7 +12482,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 0%, #B90B0B 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -12503,7 +12511,7 @@ color: #ffffff;
     font-size: 17px;
     line-height: 21px;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .navbar-app>.box-navbar-freedy {
@@ -12519,13 +12527,13 @@ color: #ffffff;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 9999px;
     padding: 0 1rem;
   }
 
 .navbar-app > .box-navbar-freedy a.logout {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -12536,7 +12544,7 @@ color: #ffffff;
 }
 
 .navbar-app > .box-navbar-freedy a.logout:hover {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
 }
 
   .navbar-app>.box-navbar-freedy a.back {
@@ -12544,11 +12552,11 @@ color: #ffffff;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#003B43,#003B43) border-box;
+      linear-gradient(#B90B0B,#B90B0B) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #FFFFff;
+    color: #ffffff;
     padding: 0.5rem 0.25rem;
   }
 
@@ -12573,7 +12581,7 @@ color: #ffffff;
   }
 
 .box-code-freedy {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     border-radius: 25px;
 }
 
@@ -12644,7 +12652,7 @@ color: #ffffff;
     font-size: 36px;
     line-height: 30px;
 
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .mywallet .saldo-box a {
@@ -12656,8 +12664,8 @@ color: #ffffff;
   }
 
   .copy-refcode input {
-    background: #FFEAA2;
-    color: #003B43 !important;
+    background: #FFA3A3;
+    color: #B90B0B !important;
   }
 
   .copy-uqcode input {
@@ -12675,7 +12683,7 @@ color: #ffffff;
     font-size: 16px;
     line-height: 17px;
 
-    color: #1D003F;
+    color: #B90B0B;
   }
 
   .copy-refcode #refcode {
@@ -12684,7 +12692,7 @@ color: #ffffff;
 
   .menus-list-app a {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 5px;
 
     font-weight: 500;
@@ -12697,7 +12705,7 @@ color: #ffffff;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 20px;
     color: #000000;
     font-weight: 500;
@@ -12706,8 +12714,8 @@ color: #ffffff;
   }
 
 .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
-    border: 1px solid #FFCF24;
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
+    border: 1px solid #B90B0B;
     color: #fff;
 }
 
@@ -12744,7 +12752,7 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list {
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 5px;
     color: #000000;
 
@@ -12754,8 +12762,8 @@ color: #ffffff;
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
-    border: 1px solid #003B43;
+    background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
+    border: 1px solid #B90B0B;
     border-radius: 5px;
 
     font-weight: 600;
@@ -12961,7 +12969,7 @@ color: #ffffff;
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -12975,7 +12983,7 @@ color: #ffffff;
 
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #003B43;
+    border-bottom: 1px solid #B90B0B;
   }
 
   .list-transaction img {
@@ -13066,12 +13074,12 @@ color: #ffffff;
 
   .currency-next-btn {
     display: inline-block;
-    background: #02e8a2;
+    background: #FFBCBC;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .check-currency {
@@ -13114,7 +13122,7 @@ color: #ffffff;
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #003B43 !important;
+    background-color: #B90B0B !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -13289,7 +13297,7 @@ color: #ffffff;
 
   .swap-form-icon {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
   }
 
@@ -13474,7 +13482,7 @@ color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #003B43;
+    color: #B90B0B;
   }
 
   .receive-note span {
@@ -13503,17 +13511,17 @@ color: #ffffff;
   }
 
 .recive-bank a {
-    background: #003B43;
+    background: #B90B0B;
     color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
 }
 
   .recive-bank a:hover {
-    background: #003B43;
+    background: #B90B0B;
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -13522,16 +13530,16 @@ color: #ffffff;
   }
     .receive-bank a {
     background: #ffffff;
-    color: #003B43;
+    color: #B90B0B;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     }
 
     .receive-bank a:hover {
-    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(90deg, #B90B0B 0%, #B90B0B 100%);
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -13550,22 +13558,22 @@ color: #ffffff;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #003B43;
+    background-color: #B90B0B;
     border-radius: 9999px;
   }
 
   .btn-receive-bank:hover {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
   }
 
 .btn-search {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
  }
 
 .btn-search:hover {
-    background-color: #003B43;
+    background-color: #B90B0B;
     color: #ffffff;
 }
 
@@ -13574,7 +13582,7 @@ color: #ffffff;
     font-size: 15px;
     line-height: 18px;
     background-color: #ffffff;
-    color: #003B43;
+    color: #B90B0B;
 }
 
 
@@ -13612,7 +13620,7 @@ color: #ffffff;
 
   .swap-selection select {
     background: #ffffff;
-    border: 2px solid #003B43;
+    border: 2px solid #B90B0B;
     border-radius: 20px;
 
     background-color: #fff !important;
@@ -13646,7 +13654,7 @@ color: #ffffff;
     font-weight: 600;
     font-size: 38px !important;
     line-height: 110%;
-    color: #003B43 !important;
+    color: #B90B0B !important;
   }
 
   .title-top-header.multi {
@@ -13743,7 +13751,7 @@ color: #ffffff;
     font-weight: 700;
     font-size: 28px;
     line-height: 110%;
-    color: #003B43;
+    color: #B90B0B;
 }
 
   .box-title-accordion .small {
@@ -13826,7 +13834,7 @@ color: #ffffff;
 
 
     .freedy-card.piggy {
-    background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+    background: linear-gradient(88.92deg, #B90B0B 0.54%, #578187 47.00%, #336c74 90.00%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
@@ -14000,12 +14008,12 @@ color: #ffffff;
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     background-color: transparent;
   }
 
   .receive-attention .all-incoming {
-    color: #0063AD !important;
+    color: #B90B0B !important;
   }
 
   .receive-attention span.bottom {
@@ -14274,7 +14282,7 @@ color: #ffffff;
 
 .input-piggy-style label {
   font-weight: 700;
-  background: linear-gradient(263.23deg, #003B43 6.67%, #000000 70.3%);
+  background: linear-gradient(263.23deg, #B90B0B 6.67%, #000000 70.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -14336,15 +14344,15 @@ color: #ffffff;
 }
 
 .navbar-app > .box-navbar-freedy.top {
-    border-top: 1px solid #003B43;
+    border-top: 1px solid #B90B0B;
 }
 
 .navbar-app > .box-navbar-freedy.bottom {
-    border-bottom: 1px solid #003B43;
+    border-bottom: 1px solid #B90B0B;
 }
 
 .btn-head-crypto {
-    border: 1px solid #003B43;
+    border: 1px solid #B90B0B;
     border-radius: 2px;
 }
 
@@ -14355,11 +14363,11 @@ color: #ffffff;
     display: inline-block;
     background: transparent;
     border-radius: 5px;
-    color: #003B43;
+    color: #B90B0B;
 }
 
     .btn-head-crypto .crypto.active {
-        background: #003B43;
+        background: #B90B0B;
         border-radius: 1px;
         color: #ffffff;
     }
@@ -14498,3 +14506,4 @@ color: #ffffff;
   font-weight: 500;
   color: #dde4f1;
 }
+

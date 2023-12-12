@@ -115,10 +115,11 @@ local server
 */
 
 // define('LINKQRCODE', "/exchangetailor.com/wallet/send");
-define('NAMETITLE', "Blipbank");
-define('NAMEBANK', "Blipbank");
 
-define('BANK_ID', "8");
+define('NAMETITLE', "Blip Digital Bank");
+define('NAMEBANK', "Blip Digital Bank");
+
+define('BANK_ID', "9");
 
 /*email config*/
 define('HOST_EMAIL', "mail.tracklessbank.com");
