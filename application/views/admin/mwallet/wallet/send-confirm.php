@@ -5,7 +5,7 @@
             <div class="row col-12 col-xl-8 mx-auto justify-content-center">
                 <div class="col-12">
                     <div class="text-center">
-                        <span class="me-auto f-hahmlet fw-bold text-blue-freedy fs-2 title-top-navbar">Confirmation</span>
+                        <span class="me-auto f-hahmlet fw-bold text-red-blip fs-2 title-top-navbar">Confirmation</span>
                     </div>
                 </div>
                 <div class="col-12 infowallet-list-app f-jakarta my-4">

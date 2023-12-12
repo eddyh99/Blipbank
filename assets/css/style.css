@@ -4732,7 +4732,7 @@ color: #ffffff;
   }
 
   .box-code-freedy {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     border-radius: 25px;
   }
 
@@ -4865,7 +4865,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
         background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -7336,7 +7336,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -9789,7 +9789,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -12715,7 +12715,7 @@ color: #ffffff;
 
 .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #B90B0B;
+    border: 1px solid #000000;
     color: #fff;
 }
 
