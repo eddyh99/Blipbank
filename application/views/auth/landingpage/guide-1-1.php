@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12 mb-3">
         <div class="row">
-            <div class="col-12 guide-wallet col-md-6 fw-semibold f-jakarta">
+            <div class="col-12 col-md-6 fw-semibold guide-text">
                 <ol>
                     <li>Login into your account</li>
                     <li>Choose the FIAT currency that you want to receive</li>
@@ -20,7 +20,7 @@
                 </ol>
             </div>
             <div class="col-6 m-auto text-center d-none d-md-grid">
-                <img src="<?= base_url() ?>assets/img/img-9.png" alt="img-9" class="img-fluid">
+                <img src="<?= base_url() ?>assets/img/img-4.svg" alt="img" class="img-fluid">
             </div>
         </div>
     </div>

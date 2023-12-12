@@ -39,6 +39,7 @@ h6 {
 .form-control:focus {
   box-shadow: none;
 }
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -134,7 +135,7 @@ section {
 font-weight: 400;
 font-size: 16px;
 line-height: 180%;
-color: rgba(255, 255, 255, 0.8);
+color: #333333;
 }
 
 .bg-flowers .right {
@@ -836,15 +837,32 @@ color: rgba(255, 255, 255, 0.8);
 
 
 .bg-guides {
-  background-color: #004C51;
+  background-image: url(../img/bg-user-guide.png);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.collapse-guide {
-  background-image: url(../img/bg-guide.png) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.collapse-guide .item-bg .items-different {
+  background-color: #ffffff;
+  height: 200px;
+  border-radius: 12px;
 }
+
+.guide-text {
+  font-size: 16px;
+  color: #505050;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-during-trip {
+  border: 4px solid #B90B0B;
+  border-radius: 5px;
+  padding: 0.75rem;
+  min-height: 385px;
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1121,14 +1139,16 @@ color: rgba(255, 255, 255, 0.8);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background: #004C51;
+  background: #FBFBFD;
   /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); */
+  border-bottom: 1px solid #B90B0B;
 }
 
 .header.header-scrolled {
-  background: #004C51;
+  background: #FBFBFD;
   padding: 15px 0;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #B90B0B;
 }
 
 .header .logo {
@@ -1285,7 +1305,7 @@ color: rgba(255, 255, 255, 0.8);
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #ffffff;
+  color: #B90B0B;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -1314,7 +1334,7 @@ color: rgba(255, 255, 255, 0.8);
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(2, 153, 209, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
 
@@ -1333,7 +1353,7 @@ color: rgba(255, 255, 255, 0.8);
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #004C51;
+  background-color: #000000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1395,7 +1415,7 @@ color: rgba(255, 255, 255, 0.8);
 --------------------------------------------------------------*/
 
 .nav-link.navbar-freedy:hover {
-  color: #b4ffeb !important;
+  color: #B90B0B !important;
 }
 
 .navbar ul li:hover {
@@ -1406,65 +1426,12 @@ color: rgba(255, 255, 255, 0.8);
   width: 100%;
   margin: auto;
   height: auto;
-  background-color: #004C51;
+  background-color: #ffffff;
 }
 
 .hero .head-p {
   color: #ffffff;
 
-}
-
-.bg-hero {
-  width: 100%;
-  height: 1000px;
-  background-image: url(../img/bg-globe-center.png);
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-
-}
-
-.bg-hero .position-relative .el-btc {
-  top: 150px;
-  left: -33px;
-}
-
-.bg-hero .position-relative .el-btc img {
-  width: 75px;
-  height: auto;
-}
-
-.bg-hero .position-relative .el-eth {
-  right: -19px;
-  top: 70px;
-  overflow-x: hidden;
-}
-
-.bg-hero .position-relative .el-eth img {
-  width: 75px;
-  height: auto;
-}
-
-.bg-hero .position-relative .el-eur {
-  right: 0;
-  bottom: 100px;
-  overflow-x: hidden;
-}
-
-.bg-hero .position-relative .el-eur img {
-  width: 75px;
-  height: auto;
-}
-
-.bg-hero .position-relative .el-usd {
-  bottom: 0;
-  left: -7px;
-}
-
-.bg-hero .position-relative .el-usd img {
-  width: 75px;
-  height: auto;
 }
 
 .hero-institue a img{
@@ -1478,23 +1445,21 @@ color: rgba(255, 255, 255, 0.8);
   margin: 0;
   font-size: 27px;
   font-weight: 700;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  color: #B90B0B;
 }
 
-.hero h1.limit {
-  margin: 0;
-  font-size: 27px;
-  font-weight: 700;
-  color: #FFCE00;
-  font-family: 'Montserrat', sans-serif;
+.hero .sub-heading {
+  font-weight: 600;
+  color: #AAAAAC;
+  font-size: 16px;
+  font-style: italic;
 }
 
 .hero h1 span {
   margin: 0;
   font-size: 27px;
   font-weight: 700;
-  background: linear-gradient(180deg, #6D6D77 6.67%, #D4D4D7 70.3%);
+  background: linear-gradient(180deg, #5D5D5D 6.67%, #5D5D5D 70.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1538,38 +1503,123 @@ color: rgba(255, 255, 255, 0.8);
   text-align: right;
 }
 
-#banktommorow {
-  background-color: rgba(255, 229, 0, 0.37);
+.highlight {
+  background-color: #B90B0B;
+  width: 100%;
+  padding: 10px 0px;
 }
 
-.bank-tommorow-wrap h2,
-.bank-tommorow-wrap p  {
-  font-family: 'Montserrat';
+.highlight .highlight-wrap {
+  width: 95%;
+  height: 100px;
+  background-color: #ffffff;
+  margin: 5px auto;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
+.highlight .highlight-wrap div span {
+  font-size: 16px;
+}
 
-.bank-tommorow-wrap .btn-discover {
-  background-color: #003B43;
-  color: #ffffff;
-  padding: 10px 24px;
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-} 
+.empowering {
+  background-image: url(../img/dots-bg.svg);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: top -25px right;
+  background-size: 350px;
+}
+
+.empowering .second-bg {
+  background-image: url(../img/dots-bg-left.svg);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: top -25px left;
+  background-size: 350px;
+  border-bottom: 2px solid #BCBCBE;
+  box-shadow: 10px 4px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.borderless-banking .borderless-banking-header h1{
+  font-size: 26px;
+  color: #6C6C6D;
+}
+
+.borderless-banking .borderless-banking-header h1 span{
+  color: #B90B0B;
+}
+
+.borderless-banking .borderless-content .borderless-in {
+  color: #151515;
+  background-color: #D8D8D9;
+  border-radius: 22px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.borderless-banking .borderless-content .borderless-in img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.borderless-banking .borderless-content .borderless-in.top {
+  padding: 20px;
+  height: 75px;
+}
+
+.borderless-banking .borderless-content .borderless-in.center {
+  padding: 20px;
+  height: 160px;
+}
+
+.borderless-banking .borderless-content .borderless-in.bottom {
+  padding: 20px;
+  height: 100px;
+}
 
 /*--------------------------------------------------------------
 # Tranfer Money 
 --------------------------------------------------------------*/
 .transfer-money h1 {
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 140%;
 }
 
+.transfer-money p {
+  font-size: 18px;
+  padding: 40px 0px;
+}
+
 .transfer-money h1 span {
-  background: linear-gradient(263.23deg, #FFE500 6.67%, #FFE500 70.3%);
+  background: linear-gradient(263.23deg, #5F5F60 6.67%, #5F5F60 70.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.transfer-money h1 span .empowering {
+  background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.empowering-card {
+  border: 4px solid #BB0101 ;
+  border-radius: 0px;
+  height: 400px;
+  border-top: 10px solid #BB0101;
+}
+
+.empowering-card .card-body p {
+  line-height: 29px;
 }
 
 .content-freedy.content-bottom ul li span {
@@ -1578,15 +1628,13 @@ color: rgba(255, 255, 255, 0.8);
 
 
 .bg-bank-future{
-  background-image: url(../img/bg-debit-card.png);
+  /* background-image: url(../img/bg-debit-card.png);
   background-clip: content-box;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #B90B0B;
 } 
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -1603,21 +1651,26 @@ color: rgba(255, 255, 255, 0.8);
 --------------------------------------------------------------*/
 
 .card-first-debit{
-  background-color: #F0F6FF;
   height: 160px;
   width: auto;
   font-size: 16px;
-  color: #0000008A;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #DADADA;
 }
 
 .title-first-debit {
   font-size: 30px;
-  color: #0066FF;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle-first-debit {
+  font-size: 16px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title-first-debit span {
-color: #000000;
+color: #ffffff;
 }
 
 .c-first-debit {
@@ -1626,7 +1679,7 @@ color: #000000;
 
 .buble-soon{
   font-size: 16px;
-  background: linear-gradient(90.30deg, #003B43 0%, #003B43 40.47%, #003B43 100%);
+  background: linear-gradient(90.30deg, #D90026 0%, #D90026 40.47%, #D90026 100%);
   width: 100px;
   height: 100px;
   border-radius: 9999999px;
@@ -1636,12 +1689,20 @@ color: #000000;
 .buble-soon.abs {
   right: -24px;
   bottom: -21px;
-  z-index: -1;
+  z-index: 1;
+}
+
+.first-debit-image {
+  bottom: -363px;
 }
 
 
+.crypto {
+  background-color: #E6E6E6;
+}
+
 /*--------------------------------------------------------------
-# Banking 
+# Anomynity 
 --------------------------------------------------------------*/
 .element-banking {
   top: -20px;
@@ -1650,6 +1711,38 @@ color: #000000;
 .element-banking.right {
   top: -20px;
   right: 0;
+}
+
+.anonymity {
+  background-image: url(../img/anonymity-bg-line.png);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: bottom 79px left -25px;
+  background-size: cover;
+  height: 800px;
+}
+
+#anonymity.bg-left {
+  background-image: url(../img/dots-bg-left.svg);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: top -25px left;
+  background-size: 450px;
+}
+
+#anonymity .bg-right {
+  background-image: url(../img/dots-bg.svg);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-position: top -25px right;
+  background-size: 500px;
+}
+
+.anonymity h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #B90B0B;
 }
 
 
@@ -1707,6 +1800,9 @@ color: #000000;
   transform: translateX(5px);
 }
 
+.transfer-money h1{
+  font-size: 24px;
+}
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
@@ -2727,7 +2823,7 @@ color: #000000;
 
 
 .send-email-wrap {
-  background: #003B43;
+  background: #D83131;
   color: #ffffff;
   padding: 6rem 1rem;
   border-radius: 10px;
@@ -2747,13 +2843,20 @@ color: #000000;
 
 .send-input-email:focus {
   border-color: #ffffff;
+  color: #ffffff;
+}
+
+.send-input-email::placeholder {
+  color: #fff;
 }
 
 .btn-send-email {
-  background-color: #FFE500;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 0.4rem 2rem;
   font-weight: 700;
+  color: #000;
+  border: 0px;
 }
 
 .contact .info-box {
@@ -3420,7 +3523,7 @@ color: #000000;
 }
 
 .footer {
-  background: linear-gradient(88.92deg, rgba(0, 76, 81, 0.90) 0.54%, rgba(0, 76, 81, 0.90) 47.28%, rgba(0, 76, 81, 0.90) 96.97%);
+  background: linear-gradient(88.92deg, #A40000 0.54%, #A40000 47.28%, #A40000 96.97%);
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -3595,7 +3698,28 @@ color: #000000;
   color: #fff;
 }
 
-/* equotransfer */
+/* BlipBank TEXT */
+.text-red-blip {
+  background: linear-gradient(263.23deg, #D90026 6.67%, #D90026 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-marron-blip {
+  background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gray-blip {
+  background: linear-gradient(263.23deg, #505050 6.67%, #505050 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .text-yellow-equo {
   background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 70.3%);
   -webkit-background-clip: text;
@@ -3619,20 +3743,7 @@ color: #000000;
   background-clip: text;
 }
 
-.text-blue-freedy.linear {
-  background: linear-gradient(263.23deg, #319CFF 6.67%, #B7DCFF 70.3%, #0B86F8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-.text-blue-freedy.black {
-  color: #000 !important;
-}
-
-.p-r {
-  position: relative;
-}
 
 .f-jakarta {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -3644,6 +3755,10 @@ color: #000000;
 
 .f-roboto {
   font-family: 'Roboto', sans-serif;
+}
+
+.f-inter {
+  font-family: 'Inter', sans-serif;
 }
 
 .f-montserrat {
@@ -3800,23 +3915,25 @@ color: #000000;
 .navbar .btn-login:focus {
   background: linear-gradient(263.23deg, #ffffff 6.67%, #ffffff 70.3%, #ffffff 100%);
   color: #000000 !important;
+  border: 1px solid #B90B0B;
 }
 
 .navbar .btn-login.active,
 .navbar .btn-login.active:focus {
-  background: linear-gradient(263.23deg, #ffffff 6.67%, #ffffff 70.3%, #ffffff 100%);
+  background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 70.3%, #B90B0B 100%);
   color: #000000 !important;
 }
 
 .navbar .btn-login.active:hover,
 .navbar .btn-login:hover {
-  background: linear-gradient(263.23deg, #ffffff 6.67%, #ffffff 70.3%, #ffffff 100%);
+  background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 70.3%, #B90B0B 100%);
 
 }
 
 .hero .btn-slider-signin.active {
   color: #fff !important;
-  background: #0F4E97 !important;
+  background: #B90B0B !important;
+  border: 2px solid #B90B0B !important;
 }
 
 .lr-title img.left {
@@ -3906,13 +4023,13 @@ color: #000000;
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 9999999px;
     color: #0F4E97;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border-radius: 10px;
+    border-radius: 9999999px;
     color: #0F4E97;
   }
 
@@ -3923,12 +4040,10 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #0F4E97;
+    color: #000000;
     background: #fff;
-    border: 2px solid #0F4E97;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 4px;
-
+    border: 2px solid #FF1919;
+    border-radius: 9999999px;
     font-size: 16px;
   }
 
@@ -4057,17 +4172,17 @@ color: #000000;
 
   .about .btn-content-silver {
     margin-bottom: 6px;
-    padding: 0.7rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     font-weight: 600;
     transition: 0.5s;
     color: #ffffff;
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
-    border-radius: 4px;
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
+    border-radius: 999999px;
   }
 
   
   .about .btn-content-silver:hover {
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
   }
 
   
@@ -5612,11 +5727,11 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 4px solid transparent !important;
+    border: 6px solid transparent !important;
     border-radius: 20px !important;
     background: 
-      linear-gradient(to right, #004C51, #004C51), 
-      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+      linear-gradient(to right, #ffffff, #ffffff), 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
@@ -5626,7 +5741,7 @@ color: #000000;
     border-radius: 20px !important;
     background: 
       linear-gradient(to right, white, white), 
-      linear-gradient(to right, #336268, #336268, #336268) !important; 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
@@ -5731,7 +5846,7 @@ color: #000000;
 
 
   .freedy-accordion-button {
-    background-color: #004C51;
+    background-color: #ffffff;
     border-radius: 10px !important;
   }
 
@@ -5750,7 +5865,7 @@ color: #000000;
     font-weight: 700;
     font-size: 16px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .head-reward {
@@ -5764,7 +5879,7 @@ color: #000000;
   .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 110%;
     color: #003B43;
   }
@@ -5773,7 +5888,7 @@ color: #000000;
     font-weight: 400;
     font-size: 12px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .small-reward {
@@ -5791,7 +5906,7 @@ color: #000000;
   }
 
   .freedy-card {
-    border: 4px solid #003B43 ;
+    border: 4px solid #B90B0B ;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -6314,17 +6429,6 @@ color: #000000;
 
 @media (min-width: 450px) {
 
-  
-  
-  .bg-hero {
-    width: 100%;
-    height: 758px;
-    background-image: url(../img/bg-globe-center.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  }
-
 
 }
 
@@ -6398,13 +6502,13 @@ color: #000000;
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 9999999px;
     color: #0F4E97;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border-radius: 10px;
+    border-radius: 9999999px;
     color: #0F4E97;
   }
 
@@ -6414,13 +6518,10 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #0F4E97;
-
+    color: #000000;
     background: #fff;
-    border: 2px solid #0F4E97;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 4px;
-
+    border: 2px solid #FF1919;
+    border-radius: 999999px;
     font-size: 16px;
   }
 
@@ -6550,17 +6651,17 @@ color: #000000;
 
   .about .btn-content-silver {
     margin-bottom: 6px;
-    padding: 0.7rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     font-weight: 600;
     transition: 0.5s;
     color: #ffffff;
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
-    border-radius: 4px;
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
+    border-radius: 999999px;
   }
 
   
   .about .btn-content-silver:hover {
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
   }
 
 
@@ -8179,11 +8280,11 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 4px solid transparent !important;
+    border: 6px solid transparent !important;
     border-radius: 20px !important;
     background: 
-      linear-gradient(to right, #004C51, #004C51), 
-      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+      linear-gradient(to right, #ffffff, #ffffff), 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
@@ -8193,7 +8294,7 @@ color: #000000;
     border-radius: 20px !important;
     background: 
       linear-gradient(to right, white, white), 
-      linear-gradient(to right, #336268, #336268, #336268) !important; 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
@@ -8216,7 +8317,7 @@ color: #000000;
 
 
   .freedy-accordion-button {
-    background-color: #004C51;
+    background-color: #ffffff;
     border-radius: 10px !important;
   }
 
@@ -8235,7 +8336,7 @@ color: #000000;
     font-weight: 700;
     font-size: 16px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .head-reward {
@@ -8257,7 +8358,7 @@ color: #000000;
     font-weight: 400;
     font-size: 12px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .small-reward {
@@ -8275,7 +8376,7 @@ color: #000000;
   }
 
   .freedy-card {
-    border: 4px solid #003B43;
+    border: 4px solid #B90B0B;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -8710,8 +8811,54 @@ color: #000000;
 
 @media (min-width: 768px) {
 
+  .transfer-money p {
+    font-size: 18px;
+    padding: 40px 122px;
+  }
+
+  .anonymity {
+    background-image: url(../img/anonymity-bg-line.png);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: bottom -55px left -3px;
+    background-size: cover;
+    height: 800px;
+  }
+  
+  #anonymity.bg-left {
+    background-image: url(../img/dots-bg-left.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px left;
+    background-size: 450px;
+  }
+  
+  #anonymity .bg-right {
+    background-image: url(../img/dots-bg.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px right;
+    background-size: cover;
+  }
+
+  .empowering {
+    background-image: url(../img/dots-bg.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px right;
+    background-size: 600px;
+  }
+  
+  .empowering .second-bg {
+    background-image: url(../img/dots-bg-left.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px left;
+    background-size: 600px;
+  }
+
   .send-email-wrap {
-    background:  url(../img/bg-send-email.png)  #003B43;
+    background:  url(../img/bg-send-email.png)  #D83131;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -8720,15 +8867,12 @@ color: #000000;
   }
   
   .hero h1 {
-    font-size: 40px;
+    font-size: 41px;
   }
 
-  .hero h1.limit {
-    font-size: 40px;
-  }
 
   .hero h1 span {
-    font-size: 40px;
+    font-size: 41px;
   }
 
   .buble-soon.abs {
@@ -8736,14 +8880,6 @@ color: #000000;
     top: 50px;
   }
 
-  .bg-hero {
-    width: 100%;
-    height: 700px;
-    background-image: url(../img/bg-globe-center.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  }
 
 
   .gmaps-search-val {
@@ -8844,7 +8980,7 @@ color: #000000;
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border-radius: 10px;
+    border-radius: 9999999px;
     color: #0F4E97;
   }
 
@@ -8854,12 +8990,10 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #0F4E97;
-
+    color: #000000;
     background: #fff;
-    border: 2px solid #0F4E97;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 4px;
+    border: 2px solid #FF1919;
+    border-radius: 999999px;
   }
 
   .box-card-freedy {
@@ -8985,17 +9119,17 @@ color: #000000;
 
   .about .btn-content-silver {
     margin-bottom: 6px;
-    padding: 0.7rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     font-weight: 600;
     transition: 0.5s;
     color: #ffffff;
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
-    border-radius: 4px;
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
+    border-radius: 999999px;
   }
 
   
   .about .btn-content-silver:hover {
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
   }
 
   .phone-content {
@@ -10566,7 +10700,7 @@ color: #000000;
 
     font-weight: 500;
     font-size: 18px;
-    line-height: 31px;
+    line-height: 42px;
 
     color: #000000;
   }
@@ -10599,17 +10733,17 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 4px solid transparent !important;
+    border: 6px solid transparent !important;
     border-radius: 20px !important;
     background: 
-      linear-gradient(to right, #004C51, #004C51), 
-      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+      linear-gradient(to right, #ffffff, #ffffff), 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
 
   .freedy-accordion-button {
-    background-color: #004C51;
+    background-color: #ffffff;
     border-radius: 10px !important;
 
   }
@@ -10629,7 +10763,7 @@ color: #000000;
     font-weight: 700;
     font-size: 20px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .head-reward {
@@ -10643,16 +10777,16 @@ color: #000000;
   .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 110%;
     color: #003B43;
-}
+  }
 
   .box-title-accordion .small {
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .small-reward {
@@ -10670,10 +10804,14 @@ color: #000000;
   }
 
   .freedy-card {
-    border: 4px solid #003B43 ;
+    border: 4px solid #B90B0B ;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: 275px;
+  }
+
+  .freedy-card.during-trips{
+    min-height: 318px;
   }
 
   .freedy-card.multibtop {
@@ -11123,39 +11261,69 @@ color: #000000;
 }
 
 @media (min-width: 992px) {
-
-  .bg-hero .position-relative .el-btc {
-    top: 150px;
-    left: 70px;
+  .guide-text {
+    font-size: 20px;
+    color: #505050;
+    font-family: 'Roboto', sans-serif;
   }
 
-  .bg-hero .position-relative .el-btc img {
-    width: 90px;
-    height: auto;
-  }
-
-  .bg-hero .position-relative .el-eth {
-    right: 32px;
-    top: 146px;
-  }
-
-  .bg-hero .position-relative .el-eth img {
-    width: 90px;
-    height: auto;
-  }
-
-  .bg-hero .position-relative .el-eur img {
-    width: 90px;
-    height: auto;
-  }
-
-  .bg-hero .position-relative .el-usd img {
-    width: 90px;
-    height: auto;
+  .anonymity {
+    background-image: url(../img/anonymity-bg-line.png);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: bottom -90px left -200px;
+    background-size: cover;
+    height: 800px;
   }
   
+  #anonymity.bg-left {
+    background-image: url(../img/dots-bg-left.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px left;
+    background-size: 450px;
+  }
+  
+  #anonymity .bg-right {
+    background-image: url(../img/dots-bg.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px right;
+    background-size: cover;
+  }
+
+  .empowering {
+    background-image: url(../img/dots-bg.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px right;
+    background-size: auto;
+  }
+  
+  .empowering .second-bg {
+    background-image: url(../img/dots-bg-left.svg);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: top -25px left;
+    background-size: auto;
+  }
+
+  .highlight .highlight-wrap {
+    width: 33.33%;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 0px 10px;
+    padding: 30px 20px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .slider-freedy p {
+    font-size: 14px;
+  }
+
   .hero h1 {
-    font-size: 54px;
+    font-size: 30px;
   }
 
   .hero h1.limit {
@@ -11163,20 +11331,15 @@ color: #000000;
   }
 
   .hero h1 span {
-    font-size: 54px;
-  }
-
-  .bg-hero {
-    width: 100%;
-    height: 920px;
-    background-image: url(../img/bg-globe-center.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
+    font-size: 30px;
   }
 
   .freedy-card {
-    min-height: 400px;
+    min-height: 295px;
+  }
+
+  .freedy-card.during-trips{
+    min-height: 440px;
   }
 
   .freedy-card.multibtop {
@@ -11227,7 +11390,7 @@ color: #000000;
     width: 130px;
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 99999999px;
     color: #0F4E97;
   }
 
@@ -11261,14 +11424,17 @@ color: #000000;
 
   .nav-link.navbar-freedy {
     background: none;
-    padding: 12px 0;
-    margin-right: 25px;
+    margin-right: 10px;
     margin-bottom: -2px;
     font-weight: 500;
     font-size: 16px;
     line-height: 110%;
     letter-spacing: 0.05em;
-    color: #ffffff;
+    color: #000000;
+    border: 1px solid #D0D0D0;
+    padding: 9px 13px;
+    width: 116px;
+    border-radius: 9999999px;
   }
 
   .sidephone-1 {
@@ -11509,14 +11675,17 @@ color: #000000;
     font-size: 40px;
   }
 
-  .transfer-money h1
-  {
-    font-size: 40px;
+  .transfer-money h1{
+    font-size: 24px;
+  }
+  
+  .anonymity h1 {
+    font-size: 24px;
   }
 
 
   .hero h1 {
-    font-size: 54px;
+    font-size: 30px;
   }
 
   .hero h1.limit {
@@ -11524,7 +11693,7 @@ color: #000000;
   }
 
   .hero h1 span {
-    font-size: 54px;
+    font-size: 30px;
   }
   
   .card-balance div:nth-child(1) {
@@ -11581,43 +11750,21 @@ color: #000000;
 
 @media (min-width: 1200px) {
 
-  .hero-institue a img {
-    top: 6px;
+  .transfer-money h1, 
+  .anonymity h1{
+    font-size: 28px;
   }
 
-  .bg-hero .position-relative .el-btc {
-    right: 32px;
-    top: 140px;
+  .highlight .highlight-wrap div span {
+    font-size: 18px;
   }
 
-  .bg-hero .position-relative .el-eth img {
-    width: 100px;
-    height: auto;
+  .hero h1 {
+      font-size: 36px;
   }
 
-  .bg-hero .position-relative .el-eur img {
-    width: 100px;
-    height: auto;
-  }
-
-  .bg-hero .position-relative .el-usd img {
-    width: 100px;
-    height: auto;
-  }
-
-  .bg-hero .position-relative .el-eth img {
-    width: 100px;
-    height: auto;
-  }
-
-  .bg-hero {
-    width: 100%;
-    height: 663px;
-    background-image: url(../img/bg-globe-center.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  
+  .hero h1 span{
+    font-size: 36px;
   }
 
   .spec-convert-custody {
@@ -11678,16 +11825,17 @@ color: #000000;
 
   .nav-link.navbar-freedy {
     background: none;
-    padding: 12px 0;
-    margin-right: 25px;
+    margin-right: 10px;
     margin-bottom: -2px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 110%;
     letter-spacing: 0.05em;
-
-    color: #ffffff;
+    color: #000000;
+    border: 1px solid #D0D0D0;
+    padding: 9px 13px;
+    width: 116px;
+    border-radius: 9999999px;
   }
 
   .nav-link.navbar-freedy.active {
@@ -11717,13 +11865,13 @@ color: #000000;
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 999999px;
     color: #0F4E97;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border-radius: 10px;
+    border-radius: 999999999px;
     color: #0F4E97;
   }
 
@@ -11733,12 +11881,10 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #0F4E97;
-
+    color: #000000;
     background: #fff;
-    border: 2px solid #0F4E97;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 4px;
+    border: 2px solid #FF1919;
+    border-radius: 999999px;
   }
 
   .box-card-freedy {
@@ -11863,16 +12009,16 @@ color: #000000;
 
   .about .btn-content-silver {
     margin-bottom: 6px;
-    padding: 0.7rem 1.2rem;
+    padding: 0.3rem 1.2rem;
     font-weight: 600;
     transition: 0.5s;
     color: #ffffff;
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
-    border-radius: 4px;
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
+    border-radius: 999999px;
   }
 
   .about .btn-content-silver:hover {
-    background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 50.3%, #FFCE00 100%);
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 50.3%, #B90B0B 100%);
   }
 
 
@@ -13491,7 +13637,7 @@ color: #000000;
 
     font-weight: 500;
     font-size: 25px;
-    line-height: 31px;
+    line-height: 63px;
 
     color: #000000;
   }
@@ -13525,11 +13671,11 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 4px solid transparent !important;
+    border: 6px solid transparent !important;
     border-radius: 20px !important;
     background: 
-      linear-gradient(to right, #004C51, #004C51), 
-      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+      linear-gradient(to right, #ffffff, #ffffff), 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
@@ -13539,13 +13685,13 @@ color: #000000;
     border-radius: 20px !important;
     background: 
       linear-gradient(to right, white, white), 
-      linear-gradient(to right, #336268, #336268, #336268) !important; 
+      linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) !important; 
     background-clip: padding-box, border-box !important;
     background-origin: padding-box, border-box !important;
   }
 
   .freedy-accordion-button {
-    background-color: #004C51;
+    background-color: #ffffff;
     border-radius: 10px !important;
   }
 
@@ -13580,7 +13726,7 @@ color: #000000;
     font-weight: 700;
     font-size: 28px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .head-reward {
@@ -13604,7 +13750,7 @@ color: #000000;
     font-weight: 400;
     font-size: 20px;
     line-height: 110%;
-    color: #ffffff;
+    color: #000000;
   }
 
   .box-title-accordion .small-reward {
@@ -13622,10 +13768,17 @@ color: #000000;
   }
 
   .freedy-card {
-    border: 4px solid  #003B43;
+    border: 4px solid #B90B0B;
     border-radius: 5px;
     padding: 0.75rem;
-    min-height: 460px;
+    min-height: 295px;
+  }
+
+  .freedy-card.during-trips{
+    border: 4px solid #B90B0B;
+    border-radius: 5px;
+    padding: 0.75rem;
+    min-height: 400px;
   }
 
   .freedy-card.multibtop {
@@ -14066,19 +14219,27 @@ color: #000000;
 
 @media (min-width: 1400px) {
 
+  .empowering-card {
+    padding: 20px;
+    height: 400px;
+  }
+
   .hero-institue a img {
     top: 80px;
   }
-
-  .bg-hero {
-    width: 100%;
-    height: 765px;
-    background-image: url(../img/bg-globe-center.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-  
+  .hero h1 {
+    font-size: 40px;
   }
+  
+  .transfer-money h1,
+  .anonymity h1{
+    font-size: 34px;
+  }
+
+  .hero h1 span{
+    font-size: 40px;
+  }
+
 
 }
 
@@ -14212,7 +14373,7 @@ color: #000000;
 
 .tbl-piggy-service tr td,
 .tbl-piggy-service tr th {
-  border: 4px solid #000000;
+  border: 4px solid #B90B0B;
   color: #000000;
 }
 
@@ -14226,7 +14387,7 @@ color: #000000;
 
 
 .bg-section-become {
-  background-color: rgba(255, 229, 0, 0.37);
+  background-color: #ffffff;
 }
 
 
@@ -14237,7 +14398,7 @@ color: #000000;
 
 
 .footer-links a .logo {
-  height: 60px;
+  height: 112px;
 }
 
 .footer-links a .trackless {
@@ -14301,12 +14462,11 @@ color: #000000;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-
-  color: #000000;
+  color: #ffffff;
 }
 
 .in-crypto .box-crypto {
-  background: linear-gradient(88.92deg, #336268 0.54%, #336268 47.00%, #336268 90.00%);
+  background: linear-gradient(88.92deg, #ffffff 0.54%, #ffffff 47.00%, #ffffff 90.00%);
   border: 1px solid #336268;
   border-radius: 10px;
   padding: 1rem;
@@ -14320,16 +14480,17 @@ color: #000000;
   line-height: 23px;
   text-align: center;
 
-  color: #dde4f1;
+  color: #000000;
 }
 
 .box-p-crypto {
-    background: linear-gradient(97.98deg, #336268 8.71%, #336268 42.93%, #336268 122.46%);
-    border: 1px solid #336268;
+    background: linear-gradient(97.98deg, #B90B0B 8.71%, #B90B0B 42.93%, #B90B0B 122.46%);
+    border: 1px solid #B90B0B;
     padding: 1rem;
     margin: 2rem 0;
     display: inline-block;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .box-p-crypto p {
