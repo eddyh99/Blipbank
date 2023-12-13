@@ -128,7 +128,7 @@ class Auth extends CI_Controller
 			$time_location = "Asia/Singapore";
 		}
 
-		if ($referral == "3q171317") {
+		if ($referral == "bl117b4") {
 			$referral = NULL;
 		}
 
@@ -150,8 +150,8 @@ class Auth extends CI_Controller
 		if ($result->code == 200) {
 			//kirim email registrasi
 
-			$subject = "EquoTransfer Registration";
-			$message = "Thank you for registering on EquoTransfer<br><br>
+			$subject = "Blip Digital Bank  Registration";
+			$message = "Thank you for registering on Blip Digital Bank <br><br>
 			username : " . $email . "<br>
 			password : (your chosen password)<br><br>
 			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate your account<br><br>
@@ -359,7 +359,7 @@ class Auth extends CI_Controller
 		$result = apitrackless($url);
 		if (!empty(@$result->code == 200)) {
 
-			$subject = "Reset Password for EquoTransfer Account";
+			$subject = "Reset Password for Blip Digital Bank  Account";
 			// kirim email forgot password dengan token validasi, lebih dari 1jam expired tokennya
 			$message = "Hi,<br><br>
 
