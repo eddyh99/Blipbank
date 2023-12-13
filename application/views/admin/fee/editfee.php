@@ -175,8 +175,9 @@
                         </div>
                         <?php }?>
                         <div class="mb-3">
-                            <a href="<?= base_url() ?>admin/fee" class="btn btn-warning">Cancel</a>
-                            <button id="btnconfirm" class="btn btn-green">Confirm</button>
+                            <a href="<?= base_url() ?>admin/fee"
+                                    class="btn btn-freedy-white shadow-none">Cancel</a>
+                            <button id="btnconfirm" class="btn btn-freedy-red">Confirm</button>
                         </div>
                     </div>
                 </div>

@@ -2122,14 +2122,14 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #2f8e9b;
+  --bs-table-bg: #B90B0B;
   --bs-table-striped-bg: #c5d7f2;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #bacbe6;
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
-  color: #000;
+  color: #fff;
   border-color: #bacbe6;
 }
 
@@ -3391,6 +3391,16 @@ fieldset:disabled .btn {
     color: #fff;
     background-color: #018294;
     border-color: #0d6efd;
+}
+.btn-red {
+    color: #fff;
+    background-color: #B90B0B;
+    border-color: #000000;
+}
+.btn-red:hover {
+    color: #000000;
+    background-color: #fd3a3a;
+    border-color: #000000;
 }
 .btn-primary:hover {
   color: #fff;
@@ -5349,7 +5359,7 @@ fieldset:disabled .btn {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: #0e616c;
+  background-color: #B90B0B;
   border-bottom: 1px solid rgba(203, 0, 0, 0.125);
   color: white;
 }
@@ -12864,7 +12874,7 @@ body {
 
 /* Freedy CSS */
 .box-dashboard-freedy-top {
-  border: 3px solid #003B43;
+  border: 3px solid #B90B0B;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
 }
@@ -12874,13 +12884,21 @@ body {
 }
 
 .list-currency a>.box-list {
-  background: #003B43 ;
+  background: #B90b0b ;
   border-radius: 10px;
   color: #fff;
 }
 
 .list-currency a>.box-list:hover{
-  background: #026f7e;
+  background: #dc2e2e;
+  color: #000;
+}
+
+.text-red-blip {
+    background: linear-gradient(263.23deg, #B90B0B 6.67%, #B90B0B 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .text-blue-freedy {
@@ -12901,12 +12919,23 @@ body {
     border: 1px solid #0F4E97;
     color: #ffffff;
 }
-
-    .btn-freedy-green:hover {
-        background: linear-gradient(263deg, #003B43 0%, #578187 50%, #336c74 100%);
-        border: 1px solid #0F4E97;
-        color: #ffffff;
-    }
+.btn-freedy-red {
+    background: linear-gradient(263deg, #fd3a3a 0%, #E73232 50%, #B90B0B 100%);
+    border-radius: 9999px;
+    border: 1px solid #0F4E97;
+    color: #ffffff;
+}
+.btn-freedy-red:hover {
+    background: linear-gradient(263deg, #B90B0B 0%, #E73232 50%, #fd3a3a 100%);
+    border-radius: 9999px;
+    border: 1px solid #0F4E97;
+    color: #000000;
+}
+.btn-freedy-green:hover {
+    background: linear-gradient(263deg, #003B43 0%, #578187 50%, #336c74 100%);
+    border: 1px solid #0F4E97;
+    color: #ffffff;
+}
 .btn-freedy-blue {
   background: linear-gradient(263deg, #319CFF 0%, #AED8FF 50%, #0B86F8 100%);
   border-radius: 9999px;
@@ -12931,7 +12960,7 @@ body {
 .btn-freedy-white:hover {
   background: linear-gradient(180deg, #CB0000 0%, #CB0000 100%);
   border: 1px solid #CB0000;
-  color: #fff;
+  color: #000000;
 }
 
 .bg-navbartop-freedy {
@@ -13049,8 +13078,8 @@ body {
 }
 
 .attention-box {
-  background: linear-gradient(180deg, #0066ff 0%, #0F4E97 100%);
-  border: 3px solid #0F4E97;
+  background: linear-gradient(180deg, #FFBCBC 0%, #FFBCBC 100%);
+  border: 3px solid #B90B0B;
   border-radius: 10px;
 }
 
@@ -13058,7 +13087,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 110%;
-  color: #ffffff;
+  color: #6c757d;
 }
 
 .attention-box p {
@@ -13066,5 +13095,5 @@ body {
   font-size: 16px;
   line-height: 20px;
 
-  color: #e1e1e1;
+  color: #000000;
 }

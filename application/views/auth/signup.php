@@ -10,7 +10,7 @@
                         <a href="<?= base_url()?>">
                             <img class="img-fluid" src="<?= base_url()?>assets/img/logo-login.png" alt="logo-login">
                         </a>
-                        <h2 translate="no" class="fw-bold text-black f-poppins mt-5 ms-2">LOG IN</h2>
+                        <h2 translate="no" class="fw-bold text-black f-poppins mt-5 ms-2">REGISTER</h2>
                         <p class="text-black f-poppins ms-2">
                             If you don’t have an account register <br> you can 
                             <a class="fw-bolder" style="color: #4D47C3;" href="<?= base_url()?>auth/login">Login here !</a>

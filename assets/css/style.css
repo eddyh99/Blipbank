@@ -192,7 +192,12 @@ color: #333333;
 
 
 .login.wrap-signup {
-  overflow-x: hidden;
+    overflow-x: hidden;
+    background: url(../img/bglogin-blip.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+    background-position: bottom bottom;
 }
 
 .bg-signup {
@@ -210,7 +215,12 @@ color: #333333;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.logo-login a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4D47C3;
+}
 .btn-signup {
   background-color: #B90B0B;
   color: #ffffff;
@@ -1754,7 +1764,7 @@ color: #ffffff;
   background-clip: content-box;
   background-repeat: no-repeat;
   background-position: top -25px right;
-  background-size: 500px;
+  background-size: 502px;
 }
 
 .anonymity h1 {
@@ -4742,7 +4752,7 @@ color: #ffffff;
   }
 
   .box-code-freedy {
-    border: 3px solid #003B43;
+    border: 3px solid #B90B0B;
     border-radius: 25px;
   }
 
@@ -4875,7 +4885,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
         background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -7346,7 +7356,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -9799,7 +9809,7 @@ color: #ffffff;
 
   .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #FFCF24;
+    border: 1px solid #000000;
     color: #fff;
   }
 
@@ -12725,7 +12735,7 @@ color: #ffffff;
 
 .menus-list-app a.menus-blue:hover {
     background: linear-gradient(180deg, #B90B0B 50%, #B90B0B 100%);
-    border: 1px solid #B90B0B;
+    border: 1px solid #000000;
     color: #fff;
 }
 

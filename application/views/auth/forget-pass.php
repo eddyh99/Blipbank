@@ -6,7 +6,7 @@
             </a>
             <div class="container position-absolute logo-login">
                 <div class="row ">
-                    <div class="col-6 mx-auto ">
+                    <div class="col-4 mx-auto">
                         <a href="<?= base_url()?>">
                             <img class="img-fluid" src="<?= base_url()?>assets/img/logo-forgetpass.png" alt="logo-login">
                         </a>
@@ -40,13 +40,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                                 <?php } ?>
-                                <div class="col-12 d-block d-lg-none mb-4 text-center">
-                                    <a href="<?= base_url() ?>">
-                                        <img src="<?= base_url() ?>assets/img/speedybank/logoindex.png" alt="">
-                                    </a>
-                                </div>
                                 <div class="col-12 mb-auto">
-                                    <div class="input-group custom-login-input py-1">
+                                    <div class="input-group custom-login-input py-1 mb-3">
                                         <div class="input-group-text ps-4">
                                             <!-- <span>
                                                 <i class="far fa-envelope fs-5"></i>
