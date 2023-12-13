@@ -2,67 +2,62 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-            <div class="col-12 card mt-3">
-                <div class="card-header fw-bold">
-                    <i class="fas fa-money-bill-transfer me-1"></i>
-                    Withdraw International
+            <?php $this->load->view("admin/header"); ?>
+            <div class="row col-12 col-xl-8 mx-auto justify-content-center">
+                <div class="col-12">
+                    <div class="text-center">
+                        <span class="me-auto f-hahmlet fw-bold text-red-blip fs-2 title-top-navbar">Confirmation</span>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <?php if (@isset($_SESSION["failed"])) { ?>
-                    <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                        <span class="notif-login f-poppins"><?= $_SESSION["failed"] ?></span>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    <?php } ?>
-                    <?php if (@isset($_SESSION["success"])) { ?>
-                    <div class="col-12 alert alert-success alert-dismissible fade show" role="alert">
-                        <span class="notif-login f-poppins"><?= @$_SESSION["success"] ?></span>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    <?php } ?>
-                    <form action="<?= base_url() ?>admin/mwallet/wdconfirm" method="post" id="form_submit"
-                        onsubmit="return validate()">
-                        <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
-                            value="<?php echo $this->security->get_csrf_hash(); ?>">
-                        <input type="hidden" name="transfer_type" value="outside">
-                        <input type="hidden" name="currencycode" id="currencycode" value="<?= $currencycode ?>">
+                <div class="col-12 infowallet-list-app f-jakarta my-4">
+                    <div class="col-12 py-4 px-4">
+                        <form method="POST" action="<?= base_url() ?>admin/sendwallet/admin_notif" id="form_submit" onsubmit="return validate()">
+                            <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>Recipients unique code</span>
+                                <span><?= @$ucode ?></span>
+                            </div>
+ 
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>Causal</span>
+                                <span><?= @$causal ?></span>
+                            </div>
 
-                        <input type="hidden" name="url" value="wdinter">
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>Amount</span>
+                                <span><?= $_SESSION['symbol'] ?> <?= number_format('20', 2) ?></span>
+                            </div>
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>Transaction fee</span>
+                                <span><?= $_SESSION['symbol'] ?> <?= number_format(@$fee, 2) ?></span>
+                            </div>
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>Total Deducted</span>
+                                <span><?= $_SESSION['symbol'] ?> <?= number_format(@$deduct, 2) ?></span>
+                            </div>
+                            <div class="col-12 list-send-wallet d-flex flex-column mb-3">
+                                <span>New Balance</span>
+                                <span><?= $_SESSION['symbol'] ?>
+                                    <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - @$deduct, 2) ?></span>
+                            </div>
 
-                        <div class="mb-3">
-                            <small class="text-blue-freedy">MAX
-                                : <?= $_SESSION["symbol"] ?>
-                                <?php if ($_SESSION["role"]=="admin"){
-                                        echo number_format(balanceadmin($_SESSION["currency"]) - $bankcost,2);
-                                      }else{
-                                        echo number_format($_SESSION["tcbalance"],2);
-                                      }
-                                 ?>
-                            </small>
-                            <input class="form-control money-input" type="text" name="amount" placeholder="Amount">
-                        </div>
-                        <div class="mb-3">
-                            <input class="form-control" type="text" name="accountHolderName"
-                                placeholder="Recipient Name">
-                        </div>
+                            <div class="attention-box p-3 text-center">
+                                <span class="title mb-3 d-inline-block">Attention</span>
+                                <p>Are you sure that the data are correct? Are you sure of the sending reason?</p>
+                                <p>The transaction is irrevesible and can not be cancelled after the confirmation.
+                                </p>
+                                <p>If you are sure to make this transaction click confirm</p>
+                            </div>
 
-                        <?php
-                        $data['type'] = "inter";
-                        $data['countries_list'] = $countries_list;
-                        $this->load->view('admin/mwallet/currency/' . @$_SESSION['currency'], $data);
-                        ?>
-
-                        <div class="mb-3">
-                            <input class="form-control" type="text" name="causal" placeholder="Causal">
-                        </div>
-
-                        <div class="col-12 mb-3">
-                            <a href="<?= base_url() ?>admin/mwallet/withdraw"
+                            <div class="mt-5 d-flex justify-content-center">
+                                <a href="<?= base_url() ?>admin/sendwallet" 
                                 class="btn btn-freedy-white px-4 py-2 me-2 shadow-none">Cancel</a>
-                            <button class="btn btn-freedy-green px-4 py-2 mx-2 shadow-none"
-                                id="btnconfirm">Confirm</button>
-                        </div>
-                    </form>
+                                <button class="btn btn-freedy-red shadow-none px-5 py-2 ms-3" type="submit" id="btnconfirm">
+                                        Confirm
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

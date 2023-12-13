@@ -28,8 +28,8 @@
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-navbartop-freedy">
         <!-- Navbar Brand-->
         <a class="navbar-brand text-center d-flex align-item justify-content-center" href="<?=base_url()?>admin/dashboard">
-            <img src="<?= base_url() ?>assets/img/logo-only.svg" alt="logo" class="me-2" style="height: 25px;">
-            <b class="text-green-freedy" translate="no"><?= NAMETITLE?></b>
+            <img src="<?= base_url() ?>assets/img/logoblip.svg" alt="logo" class="me-2" style="height: 25px;">
+            <b class="text-red-blip" translate="no"><?= NAMETITLE?></b>
         </a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 ms-2 me-lg-0 py-2 px-3" id="sidebarToggle"
