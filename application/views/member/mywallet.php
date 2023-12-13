@@ -22,7 +22,7 @@
                     <div class="col-12 menus-list-app mb-4">
                         <div class="col-12 text-center">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <a href="<?= base_url() ?>receive"
                                         class="d-flex flex-column justify-content-center align-items-center py-2 my-3 menus-blue">
                                             <svg width="48" height="48" viewBox="0 0 48 48" fill=""
@@ -53,7 +53,7 @@
                                         <span>Send to Bank</span>
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <a href="<?= base_url() ?>wallet"
                                         class="d-flex flex-column justify-content-center align-items-center py-2 my-3 menus-blue special">
                                             <svg

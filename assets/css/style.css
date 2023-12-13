@@ -193,7 +193,6 @@ color: #333333;
 
 .login.wrap-signup {
     overflow-x: hidden;
-    background: url(../img/bglogin-blip.png);
     background-repeat: no-repeat;
     background-size: auto;
     min-height: 100vh;
@@ -4473,7 +4472,7 @@ color: #ffffff;
   }
 
   .bg-signin {
-    background-color: rgb(0 78 75);
+    background-color: rgb(221 221 221);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -4659,7 +4658,7 @@ color: #ffffff;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
+    background: linear-gradient(180deg, #B90B0B 0%, #B90B0B 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -6951,7 +6950,7 @@ color: #ffffff;
   }
 
   .bg-signin {
-    background-color: rgb(0 78 75);
+    background-color: rgb(221 221 221);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -9418,7 +9417,7 @@ color: #ffffff;
   }
 
   .bg-signin {
-    background-color: rgb(0 78 75);
+    background-color: rgb(221 221 221);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11499,7 +11498,7 @@ color: #ffffff;
   }
 
   .bg-signin {
-    background-color: rgb(0 78 75);
+    background-color: rgb(221 221 221);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12325,7 +12324,7 @@ color: #ffffff;
   }
 
   .bg-signin{
-    background-color: rgb(0 78 75);
+    background-color: rgb(221 221 221);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

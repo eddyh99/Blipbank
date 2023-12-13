@@ -81,7 +81,7 @@ function sendmail($email, $subject, $message, $phpmailer)
     $mail->SMTPSecure	= false;
     $mail->Port			= 587;
 
-    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer');
+    $mail->setFrom(USERNAME_EMAIL, NAMEBANK);
     $mail->isHTML(true);
 
     $mail->ClearAllRecipients();
@@ -116,13 +116,13 @@ function send_email($email, $message, $phpmailer)
         )
     );
     
-    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Bank Notification');
+    $mail->setFrom(USERNAME_EMAIL, NAMEBANK . ' Notification');
     $mail->addReplyTo($email);
     $mail->isHTML(true);
     
     $mail->ClearAllRecipients();
     
-    $mail->Subject = 'Ask about EquoTransfer';
+    $mail->Subject = 'Ask about ' . NAMEBANK;
     $mail->AddAddress('roberto-info@tracklessmail.com');
     $mail->AddAddress('m3rc4n73@gmail.com');
     
@@ -151,13 +151,13 @@ function send_email_support_topup($email, $message, $file_tmp, $file_name,  $php
         )
     );
     
-    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Bank Notification');
+    $mail->setFrom(USERNAME_EMAIL, NAMEBANK . ' Notification');
     $mail->addReplyTo($email);
     $mail->isHTML(true);
     
     $mail->ClearAllRecipients();
     
-    $mail->Subject = 'Problem Support EquoTransfer';
+    $mail->Subject = 'Problem Support ' . NAMEBANK;
     $mail->AddAddress('saymyname377@gmail.com');
     
 
@@ -181,7 +181,7 @@ function send_email_admin($email, $subject, $message, $phpmailer)
     $mail->SMTPSecure   = false;
     $mail->Port         = 587;
 
-    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Service');
+    $mail->setFrom(USERNAME_EMAIL, NAMEBANK . ' Service');
     $mail->isHTML(true);
 
     $mail->ClearAllRecipients();
