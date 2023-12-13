@@ -84,12 +84,12 @@
         <div class="position-relative">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center slider-freedy text-start">
-                    <h1 class="f-roboto fw-semibold"> Unlock Global <span> Financial Freedom </span> With Blip Digital Bank <br></h1>
+                    <h1 class="f-roboto fw-semibold"> Unlock Global <span> Financial Freedom </span> With <a translate="no"> Blip Digital Bank </a> <br></h1>
                     <p class="sub-heading">Across Currencies, Crypto and Borders</p>
                     <p class="f-jakarta my-3">
-                        Blip digital Bank provides its customers anonymous multi-currency non-custodial wallets with the main functions of a bank account and provides them with encrypted accounts that allow customers to carry out any type of FIAT currency transaction and cryptocurrency transactions in a completely anonymous way.
+                        <span translate="no"> Blip digital Bank </span> provides its customers anonymous multi-currency non-custodial wallets with the main functions of a bank account and provides them with encrypted accounts that allow customers to carry out any type of FIAT currency transaction and cryptocurrency transactions in a completely anonymous way.
                         <br> <br>
-                        Blip Digital Bank runs on a blockchain therefore the decentralized and distributed platform allows customers to manage cryptocurrencies and FIAT currencies while maintaining financial privacy at the highest level.
+                        <span translate="no">Blip Digital Bank </span> runs on a blockchain therefore the decentralized and distributed platform allows customers to manage cryptocurrencies and FIAT currencies while maintaining financial privacy at the highest level.
                     </p>
                     <div class="d-flex flex-wrap pt-5">
                         <a href="<?= base_url(); ?>auth/login" class="btn-slider-signin active d-inline-flex align-items-center justify-content-center align-self-center me-3 mb-3">
@@ -252,7 +252,7 @@
                             <div class="borderless-in center">
                                 <img src="<?= base_url()?>assets/img/borderless-icon.png" alt="icon">
                                 <div>
-                                    Send and receive crypto or buy and sell crypto using our integrated trade-off platform
+                                    Send and receive crypto or buy and sell crypto using our integrated <span translate="no"> trade-off </span> platform
                                 </div>
                             </div>
                         </div>
@@ -363,10 +363,10 @@
                                     Revolutionary system with a
                                 </span>
                                 <br>
-                                crypto trade-off platform integrated 
+                                crypto <span translate="no"> trade-off </span> platform integrated 
                             </h2>
                             <ul class="p-0 f-inter fw-semibold">
-                                <li>
+                                <li translate="no">
                                     Trade-off platform
                                 </li>
 

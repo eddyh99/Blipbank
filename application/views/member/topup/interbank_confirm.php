@@ -1,6 +1,6 @@
 <div id="load" style="display: none;">
     <div class="img-load d-flex flex-column justify-content-center align-items-center">
-        <img src="<?= base_url()?>assets/img/logo-only.svg" alt="img-load">
+        <img src="<?= base_url()?>assets/img/logoblip.svg" alt="img-load">
         <span class="pt-3">Loading</span>
     </div>
 </div>
