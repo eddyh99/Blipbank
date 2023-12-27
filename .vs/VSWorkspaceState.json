@@ -3,13 +3,13 @@
     "",
     "\\application",
     "\\application\\views",
+    "\\application\\views\\admin",
+    "\\application\\views\\admin\\mwallet",
     "\\application\\views\\admin\\mwallet\\js",
-    "\\application\\views\\member",
     "\\application\\views\\member\\card",
-    "\\application\\views\\member\\card\\js",
     "\\assets",
     "\\assets\\css"
   ],
-  "SelectedNode": "\\application\\views\\member\\card\\js\\js_index.php",
+  "SelectedNode": "\\application\\views\\admin\\mwallet\\js\\js_masterwallet.php",
   "PreviewInSolutionExplorer": false
 }
