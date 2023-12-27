@@ -3,15 +3,13 @@
     "",
     "\\application",
     "\\application\\views",
-    "\\application\\views\\admin\\history",
-    "\\application\\views\\admin\\member",
-    "\\application\\views\\auth",
-    "\\application\\views\\auth\\js",
-    "\\application\\views\\auth\\landingpage",
+    "\\application\\views\\admin\\mwallet\\js",
+    "\\application\\views\\member",
+    "\\application\\views\\member\\card",
+    "\\application\\views\\member\\card\\js",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\css\\adm"
+    "\\assets\\css"
   ],
-  "SelectedNode": "\\assets\\css\\style.css",
+  "SelectedNode": "\\application\\views\\member\\card\\js\\js_index.php",
   "PreviewInSolutionExplorer": false
 }

@@ -1,16 +1,16 @@
-<div id="load" style="display: block;">
+<!--<div id="load" style="display: block;">
     <div class="img-load d-flex flex-column justify-content-center align-items-center">
 
-        <!-- For Logo Loading -->
+        <!-- For Logo Loading
         <img src="<?= base_url()?>assets/img/logoblip.svg" alt="img-load">
         <span class="pt-3">Please wait...</span>
         
-        <!-- For Circle Loading -->
+        <!-- For Circle Loading
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-</div> 
+</div>-->
 <?php if($requestcard == 'detailcard') {?>
     <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 col-xl-6">
@@ -109,16 +109,11 @@
                                 Request Virtual Card
                                 </span>
                             </a>
-                            <div class="col-12 mx-auto mt-4">
-                                <div class="card-topup d-grid align-items-center justify-content-center">
-                                    <span class="text-red-blip fw-bold text-center f-hahmlet">
-                                        Request Physical Card
-                                    </span>
-                                    <span class="text-red-blip fw-bold text-center f-hahmlet">
-                                        (Coming Soon)
-                                    </span>
-                                </div>
-                            </div>
+                                <a href="<?= base_url(); ?>card/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
+                                <span class="text-red-blip fw-bold text-center f-lexend fw-bold">
+                                Request Physical Card 
+                                </span>
+                            </a>
                         </div>
 
                     <?php }?>

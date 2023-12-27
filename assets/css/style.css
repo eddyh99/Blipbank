@@ -321,7 +321,7 @@ color: #333333;
 }
 
 .card-input-dlh:checked+.card {
-  border: 2px solid #0F4E97;
+  border: 2px solid #B90B0B ;
   -webkit-transition: border .3s;
   -o-transition: border .3s;
   transition: border .3s;
@@ -337,8 +337,8 @@ color: #333333;
 }
 
 .card-input-dlh:checked+.card .c-dlh {
-  background-color: #0F4E97;
-  border: 1px solid #0F4E97;
+  background-color: #B90B0B ;
+  border: 1px solid #B90B0B ;
 }
 
 .card-input-dlh+.card .m-dlh {
@@ -500,7 +500,7 @@ color: #333333;
   background: linear-gradient(#fff, #fff) padding-box,
   linear-gradient(to right, #000000, #000000, #000000) border-box;
   border-radius: 10px;
-  border: 3px solid transparent;
+  border: 3px solid #B90B0B;
 
 }
 .wrap-border-topup-txt {
@@ -546,7 +546,7 @@ color: #333333;
 
 .form-req-card {
   background: linear-gradient(#fff, #fff) padding-box,
-  linear-gradient(to right, #000000, #000000, #000000) border-box;
+  linear-gradient(to right, #B90B0B, #B90B0B, #B90B0B) border-box;
   border-radius: 6px;
   border: 3px solid transparent;
   
@@ -597,6 +597,7 @@ color: #333333;
   color: #ffffff;
 }
 .card-topup:hover .text-red-blip {
+    -webkit-text-fill-color: #ffffff;
     color: #ffffff;
 }
 .card-balance div:nth-child(1) {

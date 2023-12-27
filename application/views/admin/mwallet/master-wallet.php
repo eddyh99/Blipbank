@@ -16,7 +16,7 @@
                 </div>
                 <div class="card-body">
                     <input class="datepicker-af" type="text" name="tgl" id="tgl" readonly>
-                    <table class="table table-bordered" id="tbl_history">
+                    <table class="table table-bordered" id="tbl_historey">
                         <thead class="table-primary">
                             <tr>
                                 <th>Description</th>
@@ -28,6 +28,38 @@
                             </tr>
                         </thead>
                         <tbody style="border-top: 0;">
+                            <tr>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                                <td>Description</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

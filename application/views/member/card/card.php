@@ -42,7 +42,7 @@
             <div class="container" style="margin-bottom: 8rem;">
                 <div class="app-container py-5 d-flex flex-column justify-content-center align-items-center ">
                     <h1 class="text-center f-hahmlet text-blue-freedy my-5">SUCCESS</h1>
-                    <img src="<?= base_url()?>assets/img/logo-only.svg" alt="success">
+                    <img src="<?= base_url()?>assets/img/bliponly.svg" alt="success">
                     <h1 class="text-center f-hahmlet text-blue-freedy my-5">YOUR CARD BALANCE WILL BE UPDATE WITHIN 2 WORKING DAYS</h1>
                     <div class="text-start d-flex justify-content-center mt-5 mb-4">
                         <a href="<?= base_url(); ?>card"
@@ -97,7 +97,6 @@
 
                                 </div>
                             </div>
-
                             <div class="d-flex justify-content-between my-1 card-expire-date">
                                 <div class="">
                                     <span>Expire date</span>
@@ -118,7 +117,7 @@
                             </div>
                         </div>
                         <div class="d-flex flex-column mx-auto justify-content-center w-100">
-                            <div style="height: 1px; width: 100%; background-color: #0C5FA4" class="mt-4"></div>
+                            <div style="height: 1px; width: 100%; background-color: #B90B0B" class="mt-4"></div>
                         </div>
                         <div class="row my-4">
                             <a href="<?= base_url(); ?>card/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">

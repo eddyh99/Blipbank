@@ -26,6 +26,9 @@ $('#tgl').daterangepicker({
     }
 });
 
+$(document).ready(function() {
+        $('#tbl_historey').DataTable();
+    });
 
 var tblhistory =
     $('#tbl_history').DataTable({
