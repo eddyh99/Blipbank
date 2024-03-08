@@ -26,7 +26,6 @@ $('#tgl').daterangepicker({
     }
 });
 
-
 var tblhistory =
     $('#tbl_history').DataTable({
         "order": [
