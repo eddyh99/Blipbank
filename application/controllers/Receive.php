@@ -70,13 +70,13 @@ class Receive extends CI_Controller
         $input              = $this->input;
         $amount             = $this->security->xss_clean($input->post("amount"));
         $is_topup           = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$_SESSION["user_id"])->message;
-        if (empty($is_topup)){
-            if ($amount<35){
-                $this->session->set_flashdata('failed',"Minimum topup for first time is 35 EUR");
-                redirect("receive");
-            }
+        // if (empty($is_topup)){
+        //     if ($amount<35){
+        //         $this->session->set_flashdata('failed',"Minimum topup for first time is 35 EUR");
+        //         redirect("receive");
+        //     }
 
-        }
+        // }
         $infolist = array(
             'amount'         => $amount,
         );
