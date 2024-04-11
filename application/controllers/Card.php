@@ -202,8 +202,12 @@ class Card extends CI_Controller
         $fee = number_format($card_fee+$card_cost,2, '.', '');
 
         $balance=balance($_SESSION["user_id"],'EUR');
+        //echo "card fee:".$card_fee."<hr>";
+        //echo "card cost:".$card_cost."<hr>";
+        //echo "balance: ".$balance;
+        //die;
         if ($balance<$fee){
-            $this->session->set_flashdata("failed","Insufficient EUR balance");
+            $this->session->set_flashdata("failed","Insufficient EUR balance. Card cost is : ".$fee);
             redirect ("card");
         }
 
@@ -390,6 +394,7 @@ class Card extends CI_Controller
         $passwd         = $this->security->xss_clean($input->post("passwd"));
 
         $carddetail=array(
+            "type"          => "ChipAndPin",
             "3d_secure_settings"    => array(
                 "mobile"    => $telp,
                 "password"  => $passwd
@@ -446,12 +451,12 @@ class Card extends CI_Controller
 
 
         // Comment this for Debugging Request Card
-        // $result = apitrackless(URLAPI . "/v1/member/card/activate_physical_card", json_encode($mdata));
-        // if (@$result->code != "200") {
-        //     $this->session->set_flashdata('failed', "Please check shipping address, your phone format or 3ds Password");
-        //     redirect ("card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=");
-        //     return;
-        // }
+        $result = apitrackless(URLAPI . "/v1/member/card/activate_physical_card", json_encode($mdata));
+        if (@$result->code != "200") {
+             $this->session->set_flashdata('failed', "Please check shipping address, your phone format or 3ds Password");
+             redirect ("card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=");
+             return;
+        }
         // Comment this for Debugging Request Card
 
         $data=array(
