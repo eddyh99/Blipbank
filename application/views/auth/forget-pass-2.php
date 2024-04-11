@@ -1,4 +1,4 @@
-<div class="login bg-login">
+<div class="login bg-signin">
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center justify-content-xl-center">
             <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-5 box-form">
@@ -18,7 +18,8 @@
                     </div>
                     <div class="col-12 mb-4">
                         <label for="password1" class="form-label f-publicsans">Password</label>
-                        <div class="input-group">
+                        <div class="input-group custom-login-input py-1">
+                            <div class="input-group-text ps-4"></div>
                             <input type="password" class="form-control f-publicsans" name="pass" id="password1"
                                 placeholder="" required>
                             <div class="input-group-text">
@@ -31,7 +32,8 @@
                     </div>
                     <div class="col-12 mb-auto">
                         <label for="password2" class="form-label f-publicsans">Confirm Password</label>
-                        <div class="input-group">
+                        <div class="input-group custom-login-input py-1">
+                            <div class="input-group-text ps-4"></div>
                             <input type="password" class="form-control f-publicsans" name="confirmpass" id="password2"
                                 placeholder="" required>
                             <div class="input-group-text">
