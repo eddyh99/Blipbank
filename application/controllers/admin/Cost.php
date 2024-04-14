@@ -67,4 +67,36 @@ class Cost extends CI_Controller
 		}
 		echo json_encode($mdata);
 	}
+
+	public function settings(){
+	    $statuswd = apitrackless(URLAPI . "/v1/admin/cost/getSettings");
+
+        $data = array(
+			"title"     	=> NAMETITLE . " - Settings",
+			"content"   	=> "admin/settings/index",
+			"mn_settings"   => "active",
+			'status'		=> $statuswd->message
+		);
+
+		$this->load->view('admin_template/wrapper', $data);
+	}
+	
+	public function savesettings(){
+	    $status		= $this->security->xss_clean($this->input->post('status'));
+
+		if($status == 'on'){
+			$statuswd = 'yes';
+		}else{
+			$statuswd = 'no';
+		}
+
+		$ress = apitrackless(URLAPI . "/v1/admin/cost/setSettings?autowd=" . $statuswd);
+		if($ress->code == 200){
+			$this->session->set_flashdata('success', "Save setting successful");
+			redirect('admin/cost/settings');
+		}else{
+			$this->session->set_flashdata('failed', "Error save setting, please try again !");
+			redirect('admin/cost/settings');
+		}
+	}
 }
